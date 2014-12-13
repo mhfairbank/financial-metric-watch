@@ -4,6 +4,7 @@ class CreateCompanies < ActiveRecord::Migration
       t.string :name
       t.string :symbol
       t.integer :sector_id
+      t.string :pe_ratio
 
       t.timestamps
     end

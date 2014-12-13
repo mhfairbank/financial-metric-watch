@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20141213190232) do
     t.string   "name"
     t.string   "symbol"
     t.integer  "sector_id"
+    t.string   "pe_ratio"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
