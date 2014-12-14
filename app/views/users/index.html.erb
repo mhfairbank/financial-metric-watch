@@ -1,3 +1,6 @@
 <%= link_to("Logout",  destroy_user_session_path, method: :delete) %>
 
 <h1> Welcome to Financial Metric Watch </h1>
+
+<%= link_to("Let's See The Sectors", user_sectors_path(current_user)) %>
+
