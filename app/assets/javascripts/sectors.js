@@ -3,6 +3,10 @@
 // # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $(function() {
+  $("#ex8").slider({
+    tooltip: 'always'
+  });
+
   $("#1").on("click", function() {
     $("#2, #3, #4, #5, #6, #7, #8, #9, #10, #11").slideUp();
     $(this).parents(".col-md-4").attr("class", "col-md-12");
@@ -48,3 +52,4 @@ $(function() {
     $(this).parents(".col-md-4").attr("class", "col-md-12");
   });
 });
+

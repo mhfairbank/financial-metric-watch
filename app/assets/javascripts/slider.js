@@ -1,2 +1,0 @@
-// var MIN_PERCENTAGE = 
-// var MAX_PERCENTAGE = 

@@ -1,4 +1,14 @@
-
+<div class="container">
+  <%= form_for(@listener) do |f| %>
+    <%= f.text_field :trigger, id: 'ex8', type: 'text',
+                 data: {'slider-id' => 'ex1Slider',
+                        'slider-min' => '0',
+                        'slider-max' => '20',
+                        'slider-step' => '1',
+                        'slider-value' => '14' } %>
+    <%= f.submit %>
+  <% end %>
+</div>
 <div class="container">
   <div class="row">
     <% @sectors.each do |sector| %>
