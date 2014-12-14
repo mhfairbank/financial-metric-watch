@@ -4,7 +4,11 @@
 
 $(function() {
   $("#ex8").slider({
-    tooltip: 'always'
+    tooltip: 'show',
+    formater: function(i){
+      return i + "%";
+    }
+
   });
 
   $("#1").on("click", function() {
