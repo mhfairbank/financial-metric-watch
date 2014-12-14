@@ -1,0 +1,11 @@
+<%= form_for(@listener) do |f| %>
+  <%= f.hidden_field :user_id, value: current_user.id %>
+  <%= f.hidden_field :company_id, value: params[:id] %>
+  <%= f.text_field :trigger, id: 'ex8', type: 'text',
+               data: {'slider-id' => 'ex1Slider',
+                      'slider-min' => '-100',
+                      'slider-max' => '100',
+                      'slider-step' => '1',
+                      'slider-value' => '0.0' } %>
+  <%= f.submit %>
+<% end %>
