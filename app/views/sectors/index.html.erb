@@ -1,3 +1,47 @@
+
+<div class="container">
+  <div class="row">
+    <% @sectors.each do |sector| %>
+      <div class="col-md-4">
+        <div class="panel panel-info" id="<%= sector.id %>">
+          <div class="panel-heading">
+            <h3 class="panel-title"><%= link_to(sector.name, user_sector_path(current_user.id, sector.id)) %></h3>
+          </div>
+          <div class="panel-body">
+            <%= sector.avg_pe %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
 <% @sectors.each do |sector| %>
-  <p><%= link_to(sector.name, user_sector_path(current_user.id, sector.id)) %></p>
+  <div class="container" style="visibility: hidden" sector-data="<%= sector.id %>">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title"><%= link_to(sector.name, user_sector_path(current_user.id, sector.id)) %></h3>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <% sector.companies.each do |company| %>
+                <div class="col-md-4">
+                  <div class="panel panel-info" id="<%= company.id %>">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><%= company.name %></h3>
+                    </div>
+                    <div class="panel-body">
+                      <%= company.pe_ratio %>
+                    </div>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 <% end %>
