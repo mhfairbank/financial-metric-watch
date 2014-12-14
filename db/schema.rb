@@ -11,13 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141213231055) do
+ActiveRecord::Schema.define(version: 20141214010742) do
 
   create_table "companies", force: true do |t|
     t.string   "name"
     t.string   "symbol"
     t.integer  "sector_id"
     t.string   "pe_ratio"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "listeners", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "company_id"
+    t.string   "trigger"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
