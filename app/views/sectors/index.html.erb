@@ -1,3 +1,3 @@
 <% @sectors.each do |sector| %>
-  <p><%= sector.name %></p>
+  <p><%= link_to(sector.name, user_sector_path(current_user.id, sector.id)) %></p>
 <% end %>
