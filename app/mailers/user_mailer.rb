@@ -5,11 +5,18 @@ class UserMailer < ActionMailer::Base
     mail(to: "mhfairbank@gmail.com", subject: "Financial Metric Test", reply_to: "financialmetricwatch@gmail.com")
   end
 
-  def trigger_email(user, listener)
+  def trigger_email_above(user, listener)
     @user = user
     @listener = listener
     
-    mail(to: @user.email, subject: "Listener Triggered", reply_to: "financialmetricwatch@gmail.com")
+    mail(to: @user.email, subject: "FiscAlert", reply_to: "financialmetricwatch@gmail.com")
+  end
+
+  def trigger_email_below(user, listener)
+    @user = user
+    @listener = listener
+    
+    mail(to: @user.email, subject: "FiscAlert", reply_to: "financialmetricwatch@gmail.com")
   end
 
 
