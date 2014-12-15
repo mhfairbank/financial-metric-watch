@@ -22,8 +22,15 @@
 
 
 .navbar-brand{
-  font-family: dense-regular;
+  font-family: dense-regular, sans-serif;
   font-size: 35px;
   text-transform: uppercase ;
   opacity: 3;
 }
+
+.panel-heading {
+  font-family: dense-regular;
+  font-size: 200%;
+  text-align: center;
+}
+
