@@ -1,1 +1,4 @@
-<h1> Welcome to FiscAlert, <%=current_user.name%>!</h1>
+<div class="header text-right extra-bottom">
+  <% if current_user %>
+    Hey there, <%end %><%= current_user.name %>!
+</div>
