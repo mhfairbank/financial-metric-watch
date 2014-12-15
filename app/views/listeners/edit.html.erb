@@ -13,21 +13,19 @@
         <% end %>
        <%= @company.sector.avg_pe %>, the average for the <%= @company.sector.name %> sector.</h1><br /><br />
       <%= form_for @listener do |f| %>
-        <%= f.hidden_field :user_id, value: current_user.id %>
-        <%= f.hidden_field :company_id, value: params[:id] %>
+        <%= f.hidden_field :listener_id, value: @listener.id %>
         <%= f.text_field :trigger, id: 'ex8', type: 'text',
                      data: {'slider-id' => 'ex1Slider',
                             'slider-min' => '-300',
                             'slider-max' => '300',
                             'slider-step' => '1',
-                            'slider-value' => '0.0' } %><br /><br /><br />
+                            'slider-value' => @listener.trigger } %><br /><br /><br />
         <div class="submit text-center">
         <%= f.submit %>
-        </div>
+      </div>
 
       <% end %>
-      <br /><h1>Use the slider above to select the percentage above or below the sector's average P/E at which you'd like to be alerted.</h2>
+      <br /><h1>Use the slider above to update the percentage above or below the sector's average P/E at which you'd like to be alerted.</h2>
     </div>
   </div>
 </div>
-
