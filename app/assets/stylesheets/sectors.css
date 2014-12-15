@@ -101,3 +101,11 @@ p {
 .panel-heading {
   background-color: rgb(98, 196, 98);
 }
+
+#newyork{
+  background-image: image-url('nyc2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 100vh;
+}
