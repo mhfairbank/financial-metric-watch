@@ -2936,8 +2936,8 @@ fieldset[disabled] .btn-success.active {
 }
 .btn-info {
   color: #ffffff;
-  background-color: #5bc0de;
-  border-color: #5bc0de;
+  background-color: rgb(98, 196, 98);
+  border-color: rgb(98, 196, 98);
 }
 .btn-info:hover,
 .btn-info:focus,
@@ -4551,7 +4551,7 @@ a.label:focus {
   background-color: #42b142;
 }
 .label-info {
-  background-color: #5bc0de;
+  background-color: rgb(98, 196, 98);
 }
 .label-info[href]:hover,
 .label-info[href]:focus {
@@ -4982,7 +4982,7 @@ a.list-group-item-success.active:focus {
 }
 .list-group-item-info {
   color: #ffffff;
-  background-color: #5bc0de;
+  background-color: rgb(98, 196, 98);
 }
 a.list-group-item-info {
   color: #ffffff;
