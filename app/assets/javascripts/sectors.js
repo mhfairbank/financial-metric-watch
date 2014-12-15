@@ -17,12 +17,16 @@ $(function(){
 });
 
 $(function() {
+  
+  setTimeout(function(){
+    $("#ex1Slider").attr("style", "width: 100%;");
+  }, 10);
+
   $("#ex8").slider({
     tooltip: 'show',
     formater: function(i){
       return i + "%";
     }
-
   });
 
   // $("#1").on("click", function() {
