@@ -1,1 +1,4 @@
 <h1> Welcome to FiscAlert, <%=current_user.name%>!</h1>
+<% @listeners.each do |listener| %>
+ <%= link_to(listener.company.name + " Listener", edit_listener_path(listener.id), html_options = {class: "button"}) %>
+<% end %>
