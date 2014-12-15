@@ -2,6 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 */
+
+.panel-heading h3{
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 100 !important;
+}
+
+.panel-heading p{
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 100 !important;
+  font-style: italic !important;
+}
+
 .button,
 button,
 input[type="submit"],

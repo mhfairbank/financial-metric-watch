@@ -1,7 +1,14 @@
 <div class="container">
   <div class="row">
     <div class = "col-lg-12">
-      <%= form_for(@listener) do |f| %>
+      <h1><%= @company.name %> (<%= @company.symbol %>) has a P/E ratio of <%= @company.pe_ratio %>, 
+        <% if @company.percent_over_under < 0 %>  
+          <%= @company.percent_over_under.to_s[1..-1] + "% under" %>
+        <% else %>
+          <%= @company.percent_over_under + "% over" %>
+        <% end %>
+       <%= @company.sector.avg_pe %>, the average for the <%= @company.sector.name %> sector.</h1><br /><br />
+      <%= form_for @listener do |f| %>
         <%= f.hidden_field :user_id, value: current_user.id %>
         <%= f.hidden_field :company_id, value: params[:id] %>
         <%= f.text_field :trigger, id: 'ex8', type: 'text',
@@ -9,9 +16,10 @@
                             'slider-min' => '-100',
                             'slider-max' => '100',
                             'slider-step' => '1',
-                            'slider-value' => '0.0' } %>
+                            'slider-value' => '0.0' } %><br /><br /><br />
         <%= f.submit %>
       <% end %>
+      <br /><h1>Use the slider above to select the percentage above or below the sector's average P/E at which you'd like to be alerted.</h2>
     </div>
   </div>
 </div>
