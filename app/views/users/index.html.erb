@@ -2,3 +2,7 @@
   <% if current_user %>
     Hey there, <%end %><%= current_user.name %>!
 </div>
+
+<% @listeners.each do |listener| %>
+ <%= link_to(listener.company.name + " Listener", edit_listener_path(listener.id), html_options = {class: "button"}) %>
+<% end %>

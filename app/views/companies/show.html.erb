@@ -5,7 +5,7 @@
         <% if @company.percent_over_under < 0 %>  
           <%= @company.percent_over_under.to_s[1..-1] + "% under" %>
         <% else %>
-          <%= @company.percent_over_under + "% over" %>
+          <%= @company.percent_over_under.to_s + "% over" %>
         <% end %>
        <%= @company.sector.avg_pe %>, the average for the <%= @company.sector.name %> sector.</h1><br /><br />
       <%= form_for @listener do |f| %>
@@ -13,8 +13,8 @@
         <%= f.hidden_field :company_id, value: params[:id] %>
         <%= f.text_field :trigger, id: 'ex8', type: 'text',
                      data: {'slider-id' => 'ex1Slider',
-                            'slider-min' => '-100',
-                            'slider-max' => '100',
+                            'slider-min' => '-500',
+                            'slider-max' => '500',
                             'slider-step' => '1',
                             'slider-value' => '0.0' } %><br /><br /><br />
         <div class="submit text-center">
