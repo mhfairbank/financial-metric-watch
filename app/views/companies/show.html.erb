@@ -1,7 +1,11 @@
 <div class="container">
   <div class="row">
+    <h1 class="slider-title-company"><%= @company.name %></h1>
+  <div class="row">
     <div class = "col-lg-12">
-      <h1><%= @company.name %> (<%= @company.symbol %>) has a P/E ratio of <%= @company.pe_ratio %>, 
+      <h1>Stock Ticker: <%= @company.symbol %></h1>
+      <h1>P/E Ratio: <%= @company.pe_ratio %></h1>
+      <h1>Sector: <%= @company.sector.name %></h1>
         <% if @company.percent_over_under < 0 %>  
           <%= @company.percent_over_under.to_s[1..-1] + "% under" %>
         <% else %>
@@ -13,8 +17,8 @@
         <%= f.hidden_field :company_id, value: params[:id] %>
         <%= f.text_field :trigger, id: 'ex8', type: 'text',
                      data: {'slider-id' => 'ex1Slider',
-                            'slider-min' => '-500',
-                            'slider-max' => '500',
+                            'slider-min' => '-300',
+                            'slider-max' => '300',
                             'slider-step' => '1',
                             'slider-value' => '0.0' } %><br /><br /><br />
         <div class="submit text-center">

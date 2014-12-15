@@ -4,5 +4,5 @@
 </div>
 
 <% @listeners.each do |listener| %>
- <%= link_to(listener.company.name + " Listener", edit_listener_path(listener.id), html_options = {class: "button"}) %>
+  <%= link_to(listener.company.name + " Listener", edit_listener_path(listener.id), html_options = {class: "button"}) %><br />
 <% end %>

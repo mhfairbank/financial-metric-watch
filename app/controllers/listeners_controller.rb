@@ -10,6 +10,7 @@ class ListenersController < ApplicationController
 
   def edit
     @listener = Listener.find(params[:id])
+    @company = @listener.company
   end
 
   def update
