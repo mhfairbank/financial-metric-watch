@@ -14,6 +14,9 @@ class ListenersController < ApplicationController
   end
 
   def update
-    redirect_to current_user
+    @listener = Listener.find(params[:listener][:listener_id])
+    @listener.trigger = params[:listener][:trigger]
+    @listener.save
+    redirect_to users_path
   end
 end
