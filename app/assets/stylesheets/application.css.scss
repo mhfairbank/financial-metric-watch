@@ -54,7 +54,7 @@ span{
   max-width: 300px;
   padding: 19px 29px 29px;
   margin: 0 auto 20px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
   border: 1px solid #e5e5e5;
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
@@ -75,10 +75,34 @@ span{
   margin-bottom: 15px;
   padding: 7px 9px;
 }
+.border-form-div label, 
+.border-form-div a{
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.border-form-div h2{
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
 
 #NYC {
   background-image: image-url('nyc.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
+  height: 100vh;
+}
+
+.navbar-brand-home{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 5em;
+  text-transform: uppercase;
+  text-color: white;
+  padding-left: 10%;
+  font-weight: normal;
 }
