@@ -2,6 +2,20 @@
 // # All this logic will automatically be available in application.js.
 // # You can use CoffeeScript in this file: http://coffeescript.org/
 
+'use strict';
+
+$(function(){
+  $('.panel-body').hide();
+
+  $('.panel-heading').on('click', function(){
+
+    $(this).next().slideToggle();
+    $(this).find('.fa').toggleClass("fa-rotate-180");
+
+  });
+
+});
+
 $(function() {
   $("#ex8").slider({
     tooltip: 'show',
