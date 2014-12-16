@@ -1,9 +1,9 @@
-<body id="newyork">
+<body id="NYC">
   <div class="container">
     <div class="row">
       <% @sectors[0..2].each do |sector| %>
         <div class="col-lg-4">
-          <div class="panel panel-primary" id="<%= sector.id %>">
+          <div class="panel panel-primary panel-transparent" id="<%= sector.id %>">
             <div class="panel-heading">
               <h3><%= sector.name %></h3><br /><p>Average P/E: <%= sector.avg_pe %></p>
             </div>
@@ -20,7 +20,7 @@
     <div class="row">
       <% @sectors[3..5].each do |sector| %>
         <div class="col-lg-4">
-          <div class="panel panel-primary" id="<%= sector.id %>">
+          <div class="panel panel-primary panel-transparent" id="<%= sector.id %>">
             <div class="panel-heading">
               <h3><%= sector.name %></h3><br /><p>Average P/E: <%= sector.avg_pe %></p>
             </div>
@@ -37,7 +37,7 @@
     <div class="row">
       <% @sectors[6..8].each do |sector| %>
         <div class="col-lg-4">
-          <div class="panel panel-primary" id="<%= sector.id %>">
+          <div class="panel panel-primary panel-transparent" id="<%= sector.id %>">
             <div class="panel-heading">
               <h3><%= sector.name %></h3><br /><p>Average P/E: <%= sector.avg_pe %></p>
             </div>
@@ -54,7 +54,7 @@
     <div class="row">
       <% @sectors[9..10].each do |sector| %>
         <div class="col-lg-4">
-          <div class="panel panel-primary" id="<%= sector.id %>">
+          <div class="panel panel-primary panel-transparent" id="<%= sector.id %>">
             <div class="panel-heading">
               <h3><%= sector.name %></h3><br /><p>Average P/E: <%= sector.avg_pe %></p>
             </div>
@@ -68,4 +68,4 @@
       <% end %>
     </div>
   </div>
-</bold>
+</body>
