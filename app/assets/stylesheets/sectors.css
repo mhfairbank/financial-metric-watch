@@ -6,12 +6,13 @@
 .panel-heading h3{
   font-family: 'Roboto', sans-serif !important;
   font-weight: 100 !important;
+  font-size: 70% !important;
 }
 
 .panel-heading p{
-  font-family: 'Roboto', sans-serif !important;
-  font-weight: 100 !important;
-  font-style: italic !important;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 50%;
 }
 
 .button,
