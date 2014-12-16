@@ -15,6 +15,14 @@
   font-size: 50%;
 }
 
+.panel-transparent{
+  background: none;
+}
+
+.panel-transparent .panel-heading{
+  background: rgba(255, 255, 255, 0.5);
+}
+
 .button,
 button,
 input[type="submit"],
