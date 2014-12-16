@@ -111,3 +111,11 @@ span{
   padding-left: 10%;
   font-weight: normal;
 }
+
+#hello{
+  background-image: image-url('nyc.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
